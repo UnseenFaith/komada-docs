@@ -1,0 +1,8 @@
+{
+  "plugins": [ "forkmegithub" ],
+  "pluginsConfig": {
+    "forkmegithub": {
+      "url": "https://github.com/dirigeants/komada"
+    }
+  }
+}
