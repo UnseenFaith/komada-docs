@@ -19,3 +19,4 @@ exports.conf = {
 exports.run = (client, msg) => {
   // code here
 };
+```
