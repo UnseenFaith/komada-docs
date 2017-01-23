@@ -5,10 +5,6 @@ the categories offered in the help command. For instance adding `./commands/Misc
 will create a command named `test` in the `Misc` category. Subcategories can
 also be created by adding a second folder level.
 
-> If a command is present both in the *core* folders and your client folders,
-your command will override the core one. This can let you modify the core
-behavior. Note also that you cannot have more than one command with the same name.
-
 ```js
 exports.run = (client, msg, [...args]) => {
   // Place Code Here
