@@ -24,6 +24,7 @@ exports.help = {
   description: "Command Description",
   usage: "",
   usageDelim: ""
+  extendedHelp: "";
 };
 ```
 > Tip: If you need something created before the command is ever ran, you can specify
@@ -41,6 +42,26 @@ by the `usage` property and its given arguments.
 - **botPerms**: An array of permission strings (such as `"MANAGE_MESSAGES"`) required for the command to run.
 - **requiredFuncs**: An array of function names required for this command to execute (dependency).
 - **usage**: The usage string as determined by the Argument Usage (see below).
+
+## New Extended Help Feature : 0.14.9
+The new extended help feature allows you to go more in detail with your commands for your users.
+This allows you specify extra information that couldn't make it into the description, examples on how to
+use the command, or whatever your heart desires. Here's a good example of what an extended usage could look like.
+```
+extendedHelp: "**Usage Explained**
+
+spambot.conf set <key> <new_value> to change the value of a key. The value should match the key type.
+spambot.conf get <key> to get the current key value.
+spambot.conf reset <key> to reset the key to the default value.
+spambot.conf list to see all current configuration elements
+
+**Example Configurations**
+
+spambot.conf set banLevel 5 :: Sets the bot's ban level to 5 mentions (default is 10)
+spambot.conf reset banLevel :: Resets the ban_level key to the default value (10)
+spambot.conf set modRole @Admin :: Sets the moderator role to the Admin role (By Mention or ID, not by name)`
+};"
+```
 
 #### Command Arguments
 
