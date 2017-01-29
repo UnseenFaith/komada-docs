@@ -12,7 +12,7 @@ exports.run = (client, msg, [...args]) => {
 
 exports.conf = {
   enabled: true,
-  guildOnly: true,
+  runIn: ["text"],
   aliases: [],
   permLevel: 0,
   botPerms: [],
@@ -36,6 +36,7 @@ by the `usage` property and its given arguments.
 
 **Non-obvious options**:
 - **enabled**: Set to false to completely disable this command, it cannot be forcefully enabled.
+- **runIn**: Array of Message Channel Types that the command can be run in.
 - **aliases**: Array of aliases for the command, which will *also* trigger it.
 - **permLevel**: Permission level, controlled via `./functions/permissionLevel.js`.
 - **selfbot**: Set to true to only load this command if the bot is configured to be a selfbot.
