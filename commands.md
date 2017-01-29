@@ -4,7 +4,7 @@
 
 ## Existing Core Commands
 
-There are some core commands that are shipped with Komada. Currently, these are: `conf`, `disable`, `download`, `enable`, `eval`, `help`, `info`, `invite`, `ping`, `reboot`, `stats` and `reload`.
+There are some core commands that are shipped with Komada. Currently, these are: `conf`, `disable`, `download`, `enable`, `eval`, `help`, `info`, `invite`, `ping`, `reboot`, `stats`, `transfer` and `reload`.
 
 ## User-Submitted Commands
 
