@@ -1,108 +1,54 @@
-&lt;a name="StringConfig"&gt;&lt;/a&gt;
+<a name="StringConfig"></a>
 
-
-
-\#\# StringConfig
-
+## StringConfig
 The starting point for creating a String configuration key.
 
+**Kind**: global class
 
+* [StringConfig](#StringConfig)
+    * [new StringConfig(conf, data)](#new_StringConfig_new)
+    * [.set(value)](#StringConfig+set) ⇒ <code>[StringConfig](#StringConfig)</code>
+    * [.add(value)](#StringConfig+add) ⇒ <code>[StringConfig](#StringConfig)</code>
+    * [.del(value)](#StringConfig+del) ⇒ <code>[StringConfig](#StringConfig)</code>
 
-\*\*Kind\*\*: global class
+<a name="new_StringConfig_new"></a>
 
+### new StringConfig(conf, data)
 
+| Param | Type | Description |
+| --- | --- | --- |
+| conf | <code>Config</code> | The guild configuration obtained from the guildConfs map. |
+| data | <code>Object</code> | The data you want to append to this String configuration key. |
 
-\* \[StringConfig\]\(\#StringConfig\)
+<a name="StringConfig+set"></a>
 
-    \* \[new StringConfig\(conf, data\)\]\(\#new\_StringConfig\_new\)
-
-    \* \[.set\(value\)\]\(\#StringConfig+set\) ⇒ &lt;code&gt;\[StringConfig\]\(\#StringConfig\)&lt;/code&gt;
-
-    \* \[.add\(value\)\]\(\#StringConfig+add\) ⇒ &lt;code&gt;\[StringConfig\]\(\#StringConfig\)&lt;/code&gt;
-
-    \* \[.del\(value\)\]\(\#StringConfig+del\) ⇒ &lt;code&gt;\[StringConfig\]\(\#StringConfig\)&lt;/code&gt;
-
-
-
-&lt;a name="new\_StringConfig\_new"&gt;&lt;/a&gt;
-
-
-
-\#\#\# new StringConfig\(conf, data\)
-
-
-
-\| Param \| Type \| Description \|
-
-\| --- \| --- \| --- \|
-
-\| conf \| &lt;code&gt;Config&lt;/code&gt; \| The guild configuration obtained from the guildConfs map. \|
-
-\| data \| &lt;code&gt;Object&lt;/code&gt; \| The data you want to append to this String configuration key. \|
-
-
-
-&lt;a name="StringConfig+set"&gt;&lt;/a&gt;
-
-
-
-\#\#\# stringConfig.set\(value\) ⇒ &lt;code&gt;\[StringConfig\]\(\#StringConfig\)&lt;/code&gt;
-
+### stringConfig.set(value) ⇒ <code>[StringConfig](#StringConfig)</code>
 Sets the value of a string configurations possibles. This takes into account the list of acceptable answers from the possibles array.
 
+**Kind**: instance method of <code>[StringConfig](#StringConfig)</code>
 
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>String</code> | The value you want to set this key to. |
 
-\*\*Kind\*\*: instance method of &lt;code&gt;\[StringConfig\]\(\#StringConfig\)&lt;/code&gt;
+<a name="StringConfig+add"></a>
 
+### stringConfig.add(value) ⇒ <code>[StringConfig](#StringConfig)</code>
+Adds a value(s) to list of acceptable answers for this key. Accepts one item or an array of items.
 
+**Kind**: instance method of <code>[StringConfig](#StringConfig)</code>
 
-\| Param \| Type \| Description \|
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>String</code> &#124; <code>Array</code> | The value(s) you want to add to this key. |
 
-\| --- \| --- \| --- \|
+<a name="StringConfig+del"></a>
 
-\| value \| &lt;code&gt;String&lt;/code&gt; \| The value you want to set this key to. \|
+### stringConfig.del(value) ⇒ <code>[StringConfig](#StringConfig)</code>
+Deletes a value(s) from the string configurations possibles. Accepts one item or an array of items.
 
+**Kind**: instance method of <code>[StringConfig](#StringConfig)</code>
 
-
-&lt;a name="StringConfig+add"&gt;&lt;/a&gt;
-
-
-
-\#\#\# stringConfig.add\(value\) ⇒ &lt;code&gt;\[StringConfig\]\(\#StringConfig\)&lt;/code&gt;
-
-Adds a value\(s\) to list of acceptable answers for this key. Accepts one item or an array of items.
-
-
-
-\*\*Kind\*\*: instance method of &lt;code&gt;\[StringConfig\]\(\#StringConfig\)&lt;/code&gt;
-
-
-
-\| Param \| Type \| Description \|
-
-\| --- \| --- \| --- \|
-
-\| value \| &lt;code&gt;String&lt;/code&gt; &\#124; &lt;code&gt;Array&lt;/code&gt; \| The value\(s\) you want to add to this key. \|
-
-
-
-&lt;a name="StringConfig+del"&gt;&lt;/a&gt;
-
-
-
-\#\#\# stringConfig.del\(value\) ⇒ &lt;code&gt;\[StringConfig\]\(\#StringConfig\)&lt;/code&gt;
-
-Deletes a value\(s\) from the string configurations possibles. Accepts one item or an array of items.
-
-
-
-\*\*Kind\*\*: instance method of &lt;code&gt;\[StringConfig\]\(\#StringConfig\)&lt;/code&gt;
-
-
-
-\| Param \| Type \| Description \|
-
-\| --- \| --- \| --- \|
-
-\| value \| &lt;code&gt;String&lt;/code&gt; &\#124; &lt;code&gt;Array&lt;/code&gt; \| The value\(s\) you want to delete from this key. \|
-
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>String</code> &#124; <code>Array</code> | The value(s) you want to delete from this key. |

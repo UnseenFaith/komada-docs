@@ -1,84 +1,42 @@
-&lt;a name="ArrayConfig"&gt;&lt;/a&gt;
+<a name="ArrayConfig"></a>
 
-
-
-\#\# ArrayConfig
-
+## ArrayConfig
 The starting point for creating an Array Configuration key.
 
+**Kind**: global class
 
+* [ArrayConfig](#ArrayConfig)
+    * [new ArrayConfig(conf, data)](#new_ArrayConfig_new)
+    * [.add(value)](#ArrayConfig+add) ⇒ <code>[ArrayConfig](#ArrayConfig)</code>
+    * [.del(value)](#ArrayConfig+del) ⇒ <code>[ArrayConfig](#ArrayConfig)</code>
 
-\*\*Kind\*\*: global class
+<a name="new_ArrayConfig_new"></a>
 
+### new ArrayConfig(conf, data)
 
+| Param | Type | Description |
+| --- | --- | --- |
+| conf | <code>Config</code> | The guild configuration obtained from the guildConfs map. |
+| data | <code>Object</code> | The data you want to append to this Array configuration key. |
 
-\* \[ArrayConfig\]\(\#ArrayConfig\)
+<a name="ArrayConfig+add"></a>
 
-    \* \[new ArrayConfig\(conf, data\)\]\(\#new\_ArrayConfig\_new\)
+### arrayConfig.add(value) ⇒ <code>[ArrayConfig](#ArrayConfig)</code>
+Adds a value(s) to the array. Accepts a single value or an array of values.
 
-    \* \[.add\(value\)\]\(\#ArrayConfig+add\) ⇒ &lt;code&gt;\[ArrayConfig\]\(\#ArrayConfig\)&lt;/code&gt;
+**Kind**: instance method of <code>[ArrayConfig](#ArrayConfig)</code>
 
-    \* \[.del\(value\)\]\(\#ArrayConfig+del\) ⇒ &lt;code&gt;\[ArrayConfig\]\(\#ArrayConfig\)&lt;/code&gt;
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>String</code> &#124; <code>Array</code> | The value(s) to add to the array. |
 
+<a name="ArrayConfig+del"></a>
 
+### arrayConfig.del(value) ⇒ <code>[ArrayConfig](#ArrayConfig)</code>
+Deletes a value(s) from the array. Accepts a single value or an array of values.
 
-&lt;a name="new\_ArrayConfig\_new"&gt;&lt;/a&gt;
+**Kind**: instance method of <code>[ArrayConfig](#ArrayConfig)</code>
 
-
-
-\#\#\# new ArrayConfig\(conf, data\)
-
-
-
-\| Param \| Type \| Description \|
-
-\| --- \| --- \| --- \|
-
-\| conf \| &lt;code&gt;Config&lt;/code&gt; \| The guild configuration obtained from the guildConfs map. \|
-
-\| data \| &lt;code&gt;Object&lt;/code&gt; \| The data you want to append to this Array configuration key. \|
-
-
-
-&lt;a name="ArrayConfig+add"&gt;&lt;/a&gt;
-
-
-
-\#\#\# arrayConfig.add\(value\) ⇒ &lt;code&gt;\[ArrayConfig\]\(\#ArrayConfig\)&lt;/code&gt;
-
-Adds a value\(s\) to the array. Accepts a single value or an array of values.
-
-
-
-\*\*Kind\*\*: instance method of &lt;code&gt;\[ArrayConfig\]\(\#ArrayConfig\)&lt;/code&gt;
-
-
-
-\| Param \| Type \| Description \|
-
-\| --- \| --- \| --- \|
-
-\| value \| &lt;code&gt;String&lt;/code&gt; &\#124; &lt;code&gt;Array&lt;/code&gt; \| The value\(s\) to add to the array. \|
-
-
-
-&lt;a name="ArrayConfig+del"&gt;&lt;/a&gt;
-
-
-
-\#\#\# arrayConfig.del\(value\) ⇒ &lt;code&gt;\[ArrayConfig\]\(\#ArrayConfig\)&lt;/code&gt;
-
-Deletes a value\(s\) from the array. Accepts a single value or an array of values.
-
-
-
-\*\*Kind\*\*: instance method of &lt;code&gt;\[ArrayConfig\]\(\#ArrayConfig\)&lt;/code&gt;
-
-
-
-\| Param \| Type \| Description \|
-
-\| --- \| --- \| --- \|
-
-\| value \| &lt;code&gt;String&lt;/code&gt; &\#124; &lt;code&gt;Array&lt;/code&gt; \| The value\(s\) to delete from the array. \|
-
+| Param | Type | Description |
+| --- | --- | --- |
+| value | <code>String</code> &#124; <code>Array</code> | The value(s) to delete from the array. |

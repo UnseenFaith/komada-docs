@@ -1,52 +1,26 @@
-&lt;a name="BooleanConfig"&gt;&lt;/a&gt;
+<a name="BooleanConfig"></a>
 
-
-
-\#\# BooleanConfig
-
+## BooleanConfig
 The starting point for creating a Boolean configuration key.
 
+**Kind**: global class
 
+* [BooleanConfig](#BooleanConfig)
+    * [new BooleanConfig(conf, data)](#new_BooleanConfig_new)
+    * [.toggle()](#BooleanConfig+toggle) ⇒ <code>[BooleanConfig](#BooleanConfig)</code>
 
-\*\*Kind\*\*: global class
+<a name="new_BooleanConfig_new"></a>
 
+### new BooleanConfig(conf, data)
 
+| Param | Type | Description |
+| --- | --- | --- |
+| conf | <code>Config</code> | A guilds configuration obtained from the guildConfs map. |
+| data | <code>Object</code> | The data you want to append to this boolean key. |
 
-\* \[BooleanConfig\]\(\#BooleanConfig\)
+<a name="BooleanConfig+toggle"></a>
 
-    \* \[new BooleanConfig\(conf, data\)\]\(\#new\_BooleanConfig\_new\)
-
-    \* \[.toggle\(\)\]\(\#BooleanConfig+toggle\) ⇒ &lt;code&gt;\[BooleanConfig\]\(\#BooleanConfig\)&lt;/code&gt;
-
-
-
-&lt;a name="new\_BooleanConfig\_new"&gt;&lt;/a&gt;
-
-
-
-\#\#\# new BooleanConfig\(conf, data\)
-
-
-
-\| Param \| Type \| Description \|
-
-\| --- \| --- \| --- \|
-
-\| conf \| &lt;code&gt;Config&lt;/code&gt; \| A guilds configuration obtained from the guildConfs map. \|
-
-\| data \| &lt;code&gt;Object&lt;/code&gt; \| The data you want to append to this boolean key. \|
-
-
-
-&lt;a name="BooleanConfig+toggle"&gt;&lt;/a&gt;
-
-
-
-\#\#\# booleanConfig.toggle\(\) ⇒ &lt;code&gt;\[BooleanConfig\]\(\#BooleanConfig\)&lt;/code&gt;
-
+### booleanConfig.toggle() ⇒ <code>[BooleanConfig](#BooleanConfig)</code>
 Toggles a boolean statement for the boolean key.
 
-
-
-\*\*Kind\*\*: instance method of &lt;code&gt;\[BooleanConfig\]\(\#BooleanConfig\)&lt;/code&gt;
-
+**Kind**: instance method of <code>[BooleanConfig](#BooleanConfig)</code>
