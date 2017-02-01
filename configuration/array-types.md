@@ -7,8 +7,8 @@ The starting point for creating an Array Configuration key.
 
 * [ArrayConfig](#ArrayConfig)
     * [new ArrayConfig(conf, data)](#new_ArrayConfig_new)
-    * [.add(value)](#ArrayConfig+add) ⇒ <code>[ArrayConfig](#ArrayConfig)</code>
-    * [.del(value)](#ArrayConfig+del) ⇒ <code>[ArrayConfig](#ArrayConfig)</code>
+    * [.add(value)](#ArrayConfig+add) ⇒ [ArrayConfig](#ArrayConfig)
+    * [.del(value)](#ArrayConfig+del) ⇒ [ArrayConfig](#ArrayConfig)
 
 <a name="new_ArrayConfig_new"></a>
 
@@ -21,10 +21,10 @@ The starting point for creating an Array Configuration key.
 
 <a name="ArrayConfig+add"></a>
 
-### arrayConfig.add(value) ⇒ <code>[ArrayConfig](#ArrayConfig)</code>
+### arrayConfig.add(value) ⇒ [ArrayConfig](#ArrayConfig)
 Adds a value(s) to the array. Accepts a single value or an array of values.
 
-**Kind**: instance method of <code>[ArrayConfig](#ArrayConfig)</code>
+**Kind**: instance method of [ArrayConfig](#ArrayConfig)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -32,10 +32,10 @@ Adds a value(s) to the array. Accepts a single value or an array of values.
 
 <a name="ArrayConfig+del"></a>
 
-### arrayConfig.del(value) ⇒ <code>[ArrayConfig](#ArrayConfig)</code>
+### arrayConfig.del(value) ⇒ [ArrayConfig](#ArrayConfig)
 Deletes a value(s) from the array. Accepts a single value or an array of values.
 
-**Kind**: instance method of <code>[ArrayConfig](#ArrayConfig)</code>
+**Kind**: instance method of [ArrayConfig](#ArrayConfig)
 
 | Param | Type | Description |
 | --- | --- | --- |

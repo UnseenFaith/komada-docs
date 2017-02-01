@@ -8,9 +8,9 @@ The starting point for creating a Guild configuration
 * [Config](#Config)
     * [new Config(client, guildID, [config])](#new_Config_new)
     * _instance_
-        * [.addKey(key, defaultValue, type)](#Config+addKey) ⇒ <code>[Config](#Config)</code>
+        * [.addKey(key, defaultValue, type)](#Config+addKey) ⇒ [Config](#Config)
         * [.delKey(key)](#Config+delKey) ⇒ <code>null</code>
-        * [.reset(key)](#Config+reset) ⇒ <code>Config.&lt;Key&gt;</code>
+        * [.reset(key)](#Config+reset) ⇒ <code>Config.&ltKey&gt</code>
         * [.has(key)](#Config+has) ⇒ <code>Boolean</code>
     * _static_
         * [.get(guild)](#Config.get) ⇒ <code>Object</code>
@@ -36,14 +36,14 @@ The starting point for creating a Guild configuration
 | --- | --- | --- |
 | client | <code>Client</code> | The Discord.js client. |
 | guildID | <code>GuildID</code> | The guild for which the configuration is being made. |
-| [config] | <code>[Config](#Config)</code> | The local config to add to the configuration. |
+| [config] | <code>Object</code> | The local config to add to the configuration. |
 
 <a name="Config+addKey"></a>
 
 ### config.addKey(key, defaultValue, type) ⇒ <code>[Config](#Config)</code>
 Allows you to add a key to a guild configuration. Note: This should never be called directly as it could cause unwanted side effects.
 
-**Kind**: instance method of <code>[Config](#Config)</code>
+**Kind**: instance method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ Allows you to add a key to a guild configuration. Note: This should never be cal
 ### config.delKey(key) ⇒ <code>null</code>
 Deletes a key from the respected guild configuration. This should never be called directly.
 
-**Kind**: instance method of <code>[Config](#Config)</code>
+**Kind**: instance method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -64,10 +64,10 @@ Deletes a key from the respected guild configuration. This should never be calle
 
 <a name="Config+reset"></a>
 
-### config.reset(key) ⇒ <code>Config.&lt;Key&gt;</code>
+### config.reset(key) ⇒ <code>Config.&ltKey&gt</code>
 Resets a key for the respected guild configuration.
 
-**Kind**: instance method of <code>[Config](#Config)</code>
+**Kind**: instance method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ Resets a key for the respected guild configuration.
 ### config.has(key) ⇒ <code>Boolean</code>
 Checks the guild configuration for a key
 
-**Kind**: instance method of <code>[Config](#Config)</code>
+**Kind**: instance method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -89,7 +89,7 @@ Checks the guild configuration for a key
 ### Config.get(guild) ⇒ <code>Object</code>
 Simplifies the guild configuration for use in commands and modules.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -104,7 +104,7 @@ Simplifies the guild configuration for use in commands and modules.
 ### Config.set(key, defaultValue) ⇒ <code>Object</code>
 Set the default value for a key in the default configuration.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 **Returns**: <code>Object</code> - Returns the new default configuration for the key.
 
 | Param | Type | Description |
@@ -117,7 +117,7 @@ Set the default value for a key in the default configuration.
 ### Config.setMin(key, defaultMinValue) ⇒ <code>Object</code>
 Sets the default minimum value for a Number key
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 **Returns**: <code>Object</code> - Returns the new default configuration for the key.
 
 | Param | Type | Description |
@@ -130,7 +130,7 @@ Sets the default minimum value for a Number key
 ### Config.setMax(key, defaultMaxValue) ⇒ <code>Object</code>
 Sets the default maximum value for a Number key
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 **Returns**: <code>Object</code> - Returns the new default configuration for the key.
 
 | Param | Type | Description |
@@ -143,7 +143,7 @@ Sets the default maximum value for a Number key
 ### Config.add(key, defaultValue) ⇒ <code>Object</code>
 Adds a value to the data array for an Array key.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 **Returns**: <code>Object</code> - Returns the new default configuration for the key.
 
 | Param | Type | Description |
@@ -156,7 +156,7 @@ Adds a value to the data array for an Array key.
 ### Config.del(key, defaultValue) ⇒ <code>Object</code>
 Deletes a value from the data array for an Array key.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 **Returns**: <code>Object</code> - Returns the new default configuration for the key.
 
 | Param | Type | Description |
@@ -169,7 +169,7 @@ Deletes a value from the data array for an Array key.
 ### Config.toggle(key) ⇒ <code>Object</code>
 Toggles the true/false statement for a Boolean key
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 **Returns**: <code>Object</code> - Returns the new default configuration for the key.
 
 | Param | Type | Description |
@@ -181,7 +181,7 @@ Toggles the true/false statement for a Boolean key
 ### Config.has(guild) ⇒ <code>Boolean</code>
 Checks if the guildConfs Map has the specified guild.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -192,7 +192,7 @@ Checks if the guildConfs Map has the specified guild.
 ### Config.hasKey(key) ⇒ <code>Boolean</code>
 Checks if the default configuration has a specified key.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -203,7 +203,7 @@ Checks if the default configuration has a specified key.
 ### Config.addKey(key, defaultValue, [type]) ⇒ <code>Object</code>
 Adds a key to the default configuration, and every guilds configuration.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 **Returns**: <code>Object</code> - Returns the entire default configuration
 
 | Param | Type | Description |
@@ -217,7 +217,7 @@ Adds a key to the default configuration, and every guilds configuration.
 ### Config.delKey(key) ⇒ <code>Object</code>
 Deletes a key from the default configuration, and every guilds configuration.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 **Returns**: <code>Object</code> - Returns the new default configuration
 
 | Param | Type | Description |
@@ -229,7 +229,7 @@ Deletes a key from the default configuration, and every guilds configuration.
 ### Config.insert(client, guild) ⇒ <code>String</code>
 Inserts a guild into the guildConfs map and deletes the configuration JSON. This should never be called by anyone, this is purely for the guildCreate event.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -241,7 +241,7 @@ Inserts a guild into the guildConfs map and deletes the configuration JSON. This
 ### Config.remove(guild) ⇒ <code>String</code>
 Removes a guild from the guildConfs map and deletes the configuration JSON. This should never be called by anyone, this is purely for the guildDelete event.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -252,7 +252,7 @@ Removes a guild from the guildConfs map and deletes the configuration JSON. This
 ### Config.initialize(client) ⇒ <code>null</code>
 The motherboard of our Configuration system. There's no reason to ever call this as it's called internally upon startup.
 
-**Kind**: static method of <code>[Config](#Config)</code>
+**Kind**: static method of [Config](#Config)
 
 | Param | Type | Description |
 | --- | --- | --- |

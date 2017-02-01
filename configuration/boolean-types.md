@@ -7,7 +7,7 @@ The starting point for creating a Boolean configuration key.
 
 * [BooleanConfig](#BooleanConfig)
     * [new BooleanConfig(conf, data)](#new_BooleanConfig_new)
-    * [.toggle()](#BooleanConfig+toggle) ⇒ <code>[BooleanConfig](#BooleanConfig)</code>
+    * [.toggle()](#BooleanConfig+toggle) ⇒ [BooleanConfig](#BooleanConfig)
 
 <a name="new_BooleanConfig_new"></a>
 
@@ -20,7 +20,7 @@ The starting point for creating a Boolean configuration key.
 
 <a name="BooleanConfig+toggle"></a>
 
-### booleanConfig.toggle() ⇒ <code>[BooleanConfig](#BooleanConfig)</code>
+### booleanConfig.toggle() ⇒ [BooleanConfig](#BooleanConfig)
 Toggles a boolean statement for the boolean key.
 
-**Kind**: instance method of <code>[BooleanConfig](#BooleanConfig)</code>
+**Kind**: instance method of [BooleanConfig](#BooleanConfig)

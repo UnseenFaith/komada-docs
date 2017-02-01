@@ -7,9 +7,9 @@ The starting point for creating a String configuration key.
 
 * [StringConfig](#StringConfig)
     * [new StringConfig(conf, data)](#new_StringConfig_new)
-    * [.set(value)](#StringConfig+set) ⇒ <code>[StringConfig](#StringConfig)</code>
-    * [.add(value)](#StringConfig+add) ⇒ <code>[StringConfig](#StringConfig)</code>
-    * [.del(value)](#StringConfig+del) ⇒ <code>[StringConfig](#StringConfig)</code>
+    * [.set(value)](#StringConfig+set) ⇒ [StringConfig](#StringConfig)
+    * [.add(value)](#StringConfig+add) ⇒ [StringConfig](#StringConfig)
+    * [.del(value)](#StringConfig+del) ⇒ [StringConfig](#StringConfig)
 
 <a name="new_StringConfig_new"></a>
 
@@ -22,10 +22,10 @@ The starting point for creating a String configuration key.
 
 <a name="StringConfig+set"></a>
 
-### stringConfig.set(value) ⇒ <code>[StringConfig](#StringConfig)</code>
+### stringConfig.set(value) ⇒ [StringConfig](#StringConfig)
 Sets the value of a string configurations possibles. This takes into account the list of acceptable answers from the possibles array.
 
-**Kind**: instance method of <code>[StringConfig](#StringConfig)</code>
+**Kind**: instance method of [StringConfig](#StringConfig)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -33,10 +33,10 @@ Sets the value of a string configurations possibles. This takes into account the
 
 <a name="StringConfig+add"></a>
 
-### stringConfig.add(value) ⇒ <code>[StringConfig](#StringConfig)</code>
+### stringConfig.add(value) ⇒ [StringConfig](#StringConfig)
 Adds a value(s) to list of acceptable answers for this key. Accepts one item or an array of items.
 
-**Kind**: instance method of <code>[StringConfig](#StringConfig)</code>
+**Kind**: instance method of [StringConfig](#StringConfig)
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -44,10 +44,10 @@ Adds a value(s) to list of acceptable answers for this key. Accepts one item or 
 
 <a name="StringConfig+del"></a>
 
-### stringConfig.del(value) ⇒ <code>[StringConfig](#StringConfig)</code>
+### stringConfig.del(value) ⇒ [StringConfig](#StringConfig)
 Deletes a value(s) from the string configurations possibles. Accepts one item or an array of items.
 
-**Kind**: instance method of <code>[StringConfig](#StringConfig)</code>
+**Kind**: instance method of [StringConfig](#StringConfig)
 
 | Param | Type | Description |
 | --- | --- | --- |
