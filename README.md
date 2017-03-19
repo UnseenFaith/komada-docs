@@ -56,4 +56,4 @@ npm install
 node --harmony app.js
 ```
 
-> **Requirements**: Requires Node 7 or higher to run. Depends on Discord.js v11 or higher (the appropriate version is automatically installed).
+> **Requirements**: Requires Node 7 or higher to run. Node 7.6 and above doesn't require the `--harmony` flag. Depends on Discord.js v11 or higher (the appropriate version is automatically installed).
