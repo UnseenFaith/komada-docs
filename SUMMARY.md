@@ -11,6 +11,8 @@
 * [Creating your Pieces](creating-your-pieces.md)
   * [Using Discord.js Methods](using-discordjs-methods.md)
   * [Creating Commands](creating-commands.md)
+    * [Command arguments](command-arguments.md)
+    * [Examples](command-examples.md)
   * [Creating Inhibitors](creating-inhibitors.md)
   * [Creating Monitors](creating-monitors.md)
   * [Creating Event Handlers](creating-event-handlers.md)
@@ -21,4 +23,3 @@
   * [Boolean Types](configuration/boolean-types.md)
   * [Number Types](configuration/number-types.md)
   * [String Types](configuration/string-types.md)
-

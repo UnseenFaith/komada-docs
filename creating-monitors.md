@@ -12,8 +12,7 @@ don't pass a command parameter to them.
 
 ```js
 exports.conf = {
-  enabled: true,
-  spamProtection: false,
+  enabled: true
 };
 
 exports.run = (client, msg) => {

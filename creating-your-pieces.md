@@ -10,4 +10,4 @@ These pieces are:
 - **monitors** which are used to check a message before it's a command.
 - **events** which are triggered based on what happens in Discord.
 - **providers** which are database connectors.
-- **methods** which are native Discord.js functions
+- **methods** which are native Discord.js functions.
