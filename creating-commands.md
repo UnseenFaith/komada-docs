@@ -60,8 +60,8 @@ spambot.conf list to see all current configuration elements
 
 spambot.conf set banLevel 5 :: Sets the bot's ban level to 5 mentions (default is 10)
 spambot.conf reset banLevel :: Resets the ban_level key to the default value (10)
-spambot.conf set modRole @Admin :: Sets the moderator role to the Admin role (By Mention or ID, not by name)`
-};"
+spambot.conf set modRole @Admin :: Sets the moderator role to the Admin role (By Mention or ID, not by name)"
+};
 ```
 
 #### Command Arguments
