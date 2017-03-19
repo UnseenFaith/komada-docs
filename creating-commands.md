@@ -23,8 +23,8 @@ exports.help = {
   name: "name",
   description: "Command Description",
   usage: "",
-  usageDelim: ""
-  extendedHelp: "";
+  usageDelim: "",
+  extendedHelp: ""
 };
 ```
 > Tip: If you need something created before the command is ever ran, you can specify
