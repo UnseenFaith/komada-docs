@@ -19,3 +19,7 @@ exports.run = (client, msg) => {
   // code here
 };
 ```
+
+## Configuration
+- **enabled**: Represents if the inhibitor should be enabled or disabled, it must be
+a boolean. Set to false to completely disable this inhibitor, it cannot be forcefully enabled.

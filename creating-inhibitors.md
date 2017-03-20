@@ -13,7 +13,6 @@ returning `true` instead of a string.
 ```js
 exports.conf = {
   enabled: true,
-  spamProtection: false,
   priority: 7,
 };
 
@@ -25,3 +24,17 @@ exports.run = (client, msg, cmd) => {
   }
 }
 ```
+
+## Configuration
+- **enabled**: Represents if the inhibitor should be enabled or disabled, it must be
+a boolean. Set to false to completely disable this inhibitor, it cannot be forcefully enabled.
+- **priority**: The priority in which the inhibitor should be run. When Komada
+runs the inhibitors, it runs the ones with higher priority.
+
+**Core Inhibitors**
+Sorted by priority:
+- **10**: permissions.
+- **9**: disable.
+- **8**: runIn.
+- **7**: missingBotPermissions.
+- **6**: requiredFuncs.
