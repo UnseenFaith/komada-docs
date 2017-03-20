@@ -18,6 +18,7 @@
   * [Creating Event Handlers](creating-event-handlers.md)
   * [Creating Functions](creating-functions.md)
   * [Creating Providers](creating-providers.md)
+* [Download Pieces](download-pieces.md)
 * [Configuration](configuration.md)
   * [Array Types](configuration/array-types.md)
   * [Boolean Types](configuration/boolean-types.md)

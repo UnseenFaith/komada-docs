@@ -4,8 +4,8 @@
 
 ## Existing Core Commands
 
-There are some core commands that are shipped with Komada. Currently, these are: `conf`, `disable`, `download`, `enable`, `eval`, `help`, `info`, `invite`, `ping`, `reboot`, `stats`, `transfer` and `reload`.
+There are some core commands that are shipped with Komada. Currently, these are: `conf`, `disable`, `download`, `enable`, `eval`, `help`, `info`, `invite`, `ping`, `reboot`, `reload`, `stats` and `transfer`.
 
 ## User-Submitted Commands
 
-The [komada-pieces repository](https://github.com/dirigeants/komada-pieces/tree/master/commands) contains some user-submitted commands that you can easily import into your bot using the [download command](./download-command.md), or copy over to your bot manually.
+The [komada-pieces repository](https://github.com/dirigeants/komada-pieces/tree/master/commands) contains some user-submitted commands that you can easily import into your bot using the [download command](download-pieces.md), or copy over to your bot manually.
