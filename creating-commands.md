@@ -16,7 +16,7 @@ exports.conf = {
   aliases: [],
   permLevel: 0,
   botPerms: [],
-  requiredFuncs: []
+  requiredFuncs: [],
 };
 
 exports.help = {
@@ -24,7 +24,7 @@ exports.help = {
   description: "Command Description",
   usage: "",
   usageDelim: "",
-  extendedHelp: ""
+  extendedHelp: "",
 };
 ```
 > Tip: If you need something created before the command is ever ran, you can specify

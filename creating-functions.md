@@ -10,7 +10,7 @@ not supposed to, but let's keep it between you and me, alright?
 
 ```js
 module.exports = (str) => {
-  return str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
+  str.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
 };
 ```
 
