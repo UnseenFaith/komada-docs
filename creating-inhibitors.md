@@ -22,7 +22,7 @@ exports.run = (client, msg, cmd) => {
   } else {
     return "Reason for Rejection";
   }
-}
+};
 ```
 
 ## Configuration

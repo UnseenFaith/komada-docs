@@ -12,7 +12,7 @@ exports.conf = {
   aliases: [],
   permLevel: 0,
   botPerms: [],
-  requiredFuncs: []
+  requiredFuncs: [],
 };
 ```
 
@@ -45,7 +45,7 @@ exports.help = {
   description: "Command Description",
   usage: "",
   usageDelim: "",
-  extendedHelp: ""
+  extendedHelp: "",
 };
 ```
 
@@ -129,7 +129,7 @@ exports.help = {
   description: "Deletes a message, or edits it.",
   usage: "<Message:msg> <delete|edit> [newContent:string]",
   usageDelim: "|",
-  extendedHelp: ""
+  extendedHelp: "",
 };
 ```
 
@@ -139,7 +139,7 @@ block is an example of how it would look like, and how we would work with them.
 ```js
 exports.run = (client, msg, [message, action, newContent]) => {
   // code
-}
+};
 ```
 
 In which `message` is the argument assigned to the message object as provided in
@@ -169,7 +169,7 @@ We come back to the `exports.run`, remember that we have:
 ```js
 exports.run = (client, msg, [message, action, newContent]) => {
   // code
-}
+};
 ```
 
 As I explained before, `message` will return a message object, it'll be the message

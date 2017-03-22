@@ -12,7 +12,9 @@ don't pass a command parameter to them.
 
 ```js
 exports.conf = {
-  enabled: true
+  enabled: true,
+  ignoreBots: false,
+  ignoreSelf: false,
 };
 
 exports.run = (client, msg) => {
@@ -20,6 +22,11 @@ exports.run = (client, msg) => {
 };
 ```
 
+> **NOTE**: `ignoreBots` and `ignoreSelf` properties were added on komada **0.18.8**.
+
 ## Configuration
 - **enabled**: Represents if the inhibitor should be enabled or disabled, it must be
-a boolean. Set to false to completely disable this inhibitor, it cannot be forcefully enabled.
+a boolean. Set to false to completely disable this monitor, it cannot be forcefully enabled.
+- **ignoreBots**: Set this to true if you want the monitor to ignore bots.
+- **ignoreSelf**: Set this to true if you want the monitor to ignore the client user
+(the bot account, yourself if it's a selfbot).

@@ -25,15 +25,16 @@ npm install --save komada
 Create a file called `app.js` (or whatever you prefer) which will initiate and configure Komada.
 
 ```js
-const komada = require('komada');
+const komada = require("komada");
+
 komada.start({
-  "botToken": "your-bot-token",
-  "ownerID" : "your-user-id",
-  "clientID": "the-invite-app-id",
-  "prefix": "+",
-  "clientOptions": {
-    "fetchAllMembers": true
-  }
+  botToken: "your-bot-token",
+  ownerID: "your-user-id",
+  clientID: "the-invite-app-id",
+  prefix: "+",
+  clientOptions: {
+    fetchAllMembers: true,
+  },
 });
 ```
 
@@ -56,4 +57,6 @@ npm install
 node --harmony app.js
 ```
 
-> **Requirements**: Requires Node 7 or higher to run. Node 7.6 and above doesn't require the `--harmony` flag. Depends on Discord.js v11 or higher (the appropriate version is automatically installed).
+> **Requirements**: Requires Node 7 or higher to run. Depends on Discord.js v11 or higher (the appropriate version is automatically installed).
+
+> Node 7.6 and above doesn't require the `--harmony` flag.

@@ -9,6 +9,6 @@ are missing, the bot doesn't have permission to execute a command... etc. Howeve
 you can create your own and custom inhibitors [here](creating-inhibitors.md), such
 as an inhibitor that prevents some commands to be run in certain channels.
 
-For instance, you can *extend* [commands](commands.md)'s exports.conf object by
+For instance, you can *extend* [commands](commands.md)' exports.conf object by
 adding more properties, such as `ratelimit: 5`, and you access to it by doing
 `cmd.conf.ratelimit` (for example).
