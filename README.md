@@ -40,7 +40,7 @@ komada.start({
 
 ### Configuration Options
 
-- **botToken**: The MFA token for your bot. To get this, please see [This discord.js Getting Started Guide](https://eslachance.gitbooks.io/discord-js-bot-guide/content/getting-started/the-long-version.html), which explains how to create the bot and get the token.
+- **botToken**: The MFA token for your bot. To get this, please see [This discord.js Getting Started Guide](https://yorkaargh.gitbooks.io/discord-js-bot-guide/content/getting-started/the-long-version.html), which explains how to create the bot and get the token.
 - **ownerID**: The User ID of the bot owner - you. This gives you the highest possible access to the bot's default commands, including eval! To obtain it, enable Developer Mode in Discord, right-click your name and do "Copy ID".
 - **clientID**: The bot's client ID obtained from the same place you got the token. It's at the top of the page!
 - **prefix**: The default prefix(es) when the bot first boots up. This option becomes useless after first boot, since the prefix is written to the default configuration system. Pass an array to accept multiple prefixes.
