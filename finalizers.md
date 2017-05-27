@@ -12,7 +12,7 @@ exports.run = (client, msg, mes, start) => {
 };
 ```
 
-##Arguments:
+## Arguments:
 - **client**: The client object.
 - **msg**: The message object.
 - **mes**: The value the command returns.
