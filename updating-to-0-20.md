@@ -19,7 +19,9 @@ komada.start({
 });
 ```
 
-Now, your bot token **must** go in a separated function: `client.login`.
+Now, your bot token **must** go in a separated function: `client.login`. And instead of
+`komada.start`, we create a new instance of `Komada.Client` and assign it to any variable,
+for example `client`, and with this variable, call the function login.
 
 ```js
 const Komada = require("komada");
