@@ -8,6 +8,8 @@
   * [Inhibitors](inhibitors.md)
   * [Providers](providers.md)
   * [Event Handlers](event-handlers.md)
+  * [Finalizers](finalizers.md)
+* [Updating to 0.20.0](updating-to-0-20.md)
 * [Creating your Pieces](creating-your-pieces.md)
   * [Using Discord.js Methods](using-discordjs-methods.md)
   * [Creating Commands](creating-commands.md)

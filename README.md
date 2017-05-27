@@ -40,13 +40,14 @@ komada.start({
 
 ### Configuration Options
 
-- **botToken**: The MFA token for your bot. To get this, please see [This discord.js Getting Started Guide](https://yorkaargh.gitbooks.io/discord-js-bot-guide/content/getting-started/the-long-version.html), which explains how to create the bot and get the token.
+- **botToken**: The MFA token for your bot. To get this, please see [This discord.js Getting Started Guide](https://anidiotsguide.gitbooks.io/discord-js-bot-guide/getting-started/the-long-version.html), which explains how to create the bot and get the token.
 - **ownerID**: The User ID of the bot owner - you. This gives you the highest possible access to the bot's default commands, including eval! To obtain it, enable Developer Mode in Discord, right-click your name and do "Copy ID".
 - **clientID**: The bot's client ID obtained from the same place you got the token. It's at the top of the page!
 - **prefix**: The default prefix(es) when the bot first boots up. This option becomes useless after first boot, since the prefix is written to the default configuration system. Pass an array to accept multiple prefixes.
 - **clientOptions**: These are passed directly to the discord.js library. They are optional. For more information on which options are available, see [ClientOptions in the discord.js docs](https://discord.js.org/#/docs/main/stable/typedef/ClientOptions).
 
 > For all you selfbot users out there, you can add a option ('selfbot': true) to have Komada enabled for selfbot usage. i.e. only respond to commands from you.
+This is not required since Komada **v0.20.0**
 
 ## Running the bot
 
@@ -54,9 +55,9 @@ Then, run the following in your folder:
 
 ```
 npm install
-node --harmony app.js
+node app.js
 ```
 
-> **Requirements**: Requires Node 7 or higher to run. Depends on Discord.js v11 or higher (the appropriate version is automatically installed).
+> **Requirements**: Requires Node 7.6.0 or higher to run. Depends on Discord.js v11.1.0 or higher (the appropriate version is automatically installed).
 
-> Node 7.6 and above doesn't require the `--harmony` flag.
+You are using **0.19.2** and you want to move to **0.20.0**? Check this out: [Updating to 0.20.0](./updating-to-0-20.md)

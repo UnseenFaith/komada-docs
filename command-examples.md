@@ -37,6 +37,7 @@ it took to send the message. In the `exports.conf` we know that:
 - The bot doesn't require any special permissions for it.
 - The bot doesn't require any external function for it.
 - The command has no arguments.
+- The command has no cooldown (0 seconds).
 
 (and neither has extendedHelp, do you need it for a ping command?)
 
