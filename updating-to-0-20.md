@@ -44,6 +44,10 @@ range of 0-10.
 
 However, it only accepts an array of 11 objects, with the following format:
 
+> Be careful! If you have assigned new **Komada.Client** to **client**, client
+will be already defined in upper scope. You can avoid that by assigning a generic
+name to `new Komada.Client` (like your bot's name).
+
 ```js
 permStructure: [
   {
@@ -88,7 +92,7 @@ permStructure: new Komada.PermLevels()
     const modRole = msg.guild.roles.find("name", msg.guild.conf.modRole);
     return modRole && msg.member.roles.has(modRole.id);
   })
-  .structure, // **IMPORTANT!!**
+  .structure, // **Make the Komada.PermLevels' constructor return an array**
 ```
 
 Any non-specified level will be fulfilled with functions that always return `false`.
@@ -102,6 +106,32 @@ that return a Promise, like `msg.send`. There's no need to change anything else.
 If you return something, like a **Message** object, the variable `mes` from
 the [finalizers](./finalizers.md) will be available and defined as whatever
 the [command](./commands.md) returned.
+
+## Log function
+
+Do you use `client.funcs.log()` in your code? It's not a thing anymore in our code. We have changed
+it a bit, it's now an event:
+
+```js
+client.emit("log", data, type);
+```
+
+It'll execute the event `log` from komada's core folder, **events**. `data` is the data you want it
+to print, while `type` is one of the following:
+
+- **debug**: Prints a log with a magenta timestamp. (Emits console.log)
+- **warn**: Prints a log with a yellow timestamp. (Emits console.warn)
+- **error**: Prints a log with a red timestamp. (Emits console.error)
+- **log**: Prints a log with a blue timestamp. (Emits console.log)
+
+If `type` is not assigned, it'll be assigned to **log** by default.
+
+Additionally, you have the following:
+
+```js
+client.emit("error", data);
+client.emit("warn", data);
+```
 
 ## Permissions
 
