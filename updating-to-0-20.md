@@ -117,7 +117,7 @@ client.emit("log", data, type);
 ```
 
 It'll execute the event `log` from komada's core folder, **events**. `data` is the data you want it
-to print, while `type` is one of the following:
+to print, it can also be an **error** object, while `type` is one of the following:
 
 - **debug**: Prints a log with a magenta timestamp. (Emits console.log)
 - **warn**: Prints a log with a yellow timestamp. (Emits console.warn)
