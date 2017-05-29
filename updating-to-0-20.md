@@ -92,7 +92,7 @@ permStructure: new Komada.PermLevels()
     const modRole = msg.guild.roles.find("name", msg.guild.conf.modRole);
     return modRole && msg.member.roles.has(modRole.id);
   })
-  .structure, // **Make the Komada.PermLevels' constructor return an array**
+  .structure,
 ```
 
 Any non-specified level will be fulfilled with functions that always return `false`.
