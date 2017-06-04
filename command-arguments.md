@@ -13,6 +13,7 @@ exports.conf = {
   permLevel: 0,
   botPerms: [],
   requiredFuncs: [],
+  cooldown: 30,
 };
 ```
 
@@ -31,6 +32,8 @@ the ID you have set in `ownerID` when you created the file to configure and init
 in which your bot requires to run this command (such as `"MANAGE_MESSAGES"`).
 - **requiredFuncs**: Represents an array with all functions your bot requires to
 run this command. They are present on [komada-pieces](https://github.com/dirigeants/komada-pieces) GitHub repo.
+- **cooldown**: Amount of time in seconds for the command cooldown. They are per-user and affects globally.
+The cooldown is **not** applied when the command fails, but in success.
 - **selfbot**: Additionally, there's a property called selfbot, must be a boolean.
 Set to true to only load this command if the bot is configured to be a selfbot.
 
@@ -112,7 +115,7 @@ string with a length between 4 and 16 (including both limits).
 Now, after we understand how to configurate the command, we'll start writting it:
 
 ```js
-exports.run = (client, msg, [...args]) => {
+exports.run = async (client, msg, [...args]) => {
   // Place Code Here
 };
 ```
@@ -137,7 +140,7 @@ Then, we have to define all the arguments from *help.usage*, the following code
 block is an example of how it would look like, and how we would work with them.
 
 ```js
-exports.run = (client, msg, [message, action, newContent]) => {
+exports.run = async (client, msg, [message, action, newContent]) => {
   // code
 };
 ```
@@ -167,7 +170,7 @@ Komada does *String.toLowerCase()*, if you write `DELETE` or any other variation
 We come back to the `exports.run`, remember that we have:
 
 ```js
-exports.run = (client, msg, [message, action, newContent]) => {
+exports.run = async (client, msg, [message, action, newContent]) => {
   // code
 };
 ```

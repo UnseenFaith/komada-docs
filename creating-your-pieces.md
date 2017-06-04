@@ -11,3 +11,6 @@ These pieces are:
 - **events** which are triggered based on what happens in Discord.
 - **providers** which are database connectors.
 - **methods** which are native Discord.js functions.
+- **finalizers** which are functions run after a successful command.
+
+> Finalizers have been added to Komada **v0.20.0**.

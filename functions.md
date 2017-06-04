@@ -17,11 +17,11 @@ And even inspect the data if it's an object.
 Functions have the following syntax:
 
 ```js
-module.exports = ([...args]) => {
+module.exports = (...args) => {
   // code
 };
 ```
 
-You use them like you do with a normal function. `[...args]` represents a variable
+You use them like you do with a normal function. `...args` represents a variable
 number of arguments you want to work with. And the code must `return` something.
 (Same you do with functions).
