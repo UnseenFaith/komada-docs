@@ -22,3 +22,28 @@ return anything. Basically any functions. You know what I mean.
 Functions are stored in the main `client` object, in the `funcs` property. This has a property for each function added, based on its filename. So for example if you have `./functions/myFunc.js` , you can access it through `client.funcs.myFunc(arguments)`. If you use `exports.thing = "blah";` then you would access that rather from `client.funcs.myFunc.thing;`.
 
 For more details on modules, see [this nice little article I've found that describes it well](https://www.hacksparrow.com/node-js-exports-vs-module-exports.html).
+
+## Komada-Pieces
+
+If you want to PR a function to Komada-Pieces, make sure you PR it with the following format:
+
+```js
+const func = (str, l) => {
+  const x = str.substring(0, l).lastIndexOf(" ");
+  const pos = x === -1 ? l : x;
+  return str.substring(0, pos);
+};
+
+func.conf = { requiredModules: [] };
+func.help = {
+  name: "splitText",
+  type: "functions",
+  description: "Find the last space of a string and cuts it down to a manageable size for use in Discord.",
+};
+
+module.exports = func;
+```
+
+So we can download it with the `download` command. Only change is defining the function as `func` instead of
+assigning it to `module.exports`, and in `func`, apply both objects with the properties written in the example
+above.

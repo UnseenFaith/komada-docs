@@ -28,7 +28,6 @@ const Komada = require("komada");
 
 const client = new Komada.Client({
   ownerID: "your-user-id",
-  clientID: "the-invite-app-id",
   prefix: "+",
   clientOptions: {
     fetchAllMembers: true,
@@ -37,6 +36,8 @@ const client = new Komada.Client({
 
 client.login("your-bot-token");
 ```
+
+> The property `clientID` is not longer used since **0.20.1**.
 
 Additionally, if you want to change the way permission levels are configured, you
 can use a new property: `permStructure`. You can set a permission structure with a
@@ -147,7 +148,11 @@ author of the message can run, also, it runs all inhibitors in every command.
 
 ## Finalizers
 
-They are functions that are run after a successful command. Check [finalizers](./finalizers.md).
+They are functions that are run after a successful command. Check [finalizers](finalizers.md).
+
+## Extendables
+
+They are functions that extend Discord.js properties. Check [extendables](extendables.md).
 
 ## Cooldown
 

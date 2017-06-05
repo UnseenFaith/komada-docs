@@ -14,6 +14,10 @@ using this command, or copy over to your bot manually.
 - **Providers**: Downloads a [provider](providers.md) from komada-pieces providers.
 - **url**: Downloads a piece from an URL, as long as the URL gives raw text (such
 as hastebin).
+- **Finalizers**: Downloads a [finalizer](finalizers.md) from komada-pieces finalizers.
+- **Extendables**: Downloads a [extendable](extendables.md) from komada-pieces extendables.
+
+> Finalizers and Extendables have been added to Komada **v0.20.0**.
 
 ### Location:
 The location for your downloaded file. If you download the file from the GitHub

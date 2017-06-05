@@ -47,7 +47,8 @@ komada.start({
 - **clientOptions**: These are passed directly to the discord.js library. They are optional. For more information on which options are available, see [ClientOptions in the discord.js docs](https://discord.js.org/#/docs/main/stable/typedef/ClientOptions).
 
 > For all you selfbot users out there, you can add a option ('selfbot': true) to have Komada enabled for selfbot usage. i.e. only respond to commands from you.
-This is not required since Komada **v0.20.0**
+This is not required since Komada **v0.20.1**
+**clientID** is no longer required since Komada **v0.20.1**
 
 ## Running the bot
 
