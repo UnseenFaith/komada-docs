@@ -22,6 +22,7 @@
   * [Creating Functions](creating-functions.md)
   * [Creating Providers](creating-providers.md)
 * [Download Pieces](download-pieces.md)
+* [PermStructure](permStructure.md)
 * [SettingGateway](settingGateway.md)
   * [schemaManager](settingGateway/schemaManager.md)
   * [SQL](settingGateway/sql.md)
