@@ -7,11 +7,11 @@ loaded and will run when that event is triggered.
 Their structure is the following :
 
 ```js
-exports.run = (client, [...args]) => {
+exports.run = (client, ...args) => {
   // event contents
 };
 ```
 
-Where `[...args]` are arguments you would *normally* get from those events.
-For example, while the `ready` event would only have `(client)`, the
-`guildMemberAdd` event would be `(guild, member)`.
+Where `...args` are arguments you would *normally* get from those events.
+For example, while the `ready` event would only have `client`, the
+`guildMemberAdd` event would be `client, member`.
