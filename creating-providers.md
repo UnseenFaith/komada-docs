@@ -10,33 +10,26 @@ There's a little trick we do with exports if you want to publish your data provi
 in [Komada Pieces](https://github.com/dirigeants/komada-pieces).
 
 ```js
-let db;
-
 const config = {
   moduleName: "rethink",
   enabled: true,
   db: "Komada",
 };
 
-exports.all = table => db.table(table).run();
+const r = require("rethinkdbdash")({ db: config.db });
 
-exports.get = (table, id) => db.table(table).get(id).run();
+exports.all = table => r.table(table).run();
 
-exports.help = {};
-exports.help.name = "rethinkdb";
-exports.help.type = "providers";
-exports.help.description = "Allows you use rethinkDB functionality throughout Komada.";
+exports.get = (table, id) => r.table(table).get(id).run();
+
+exports.help = {
+  name: "rethinkdb",
+  type: "providers",
+  description: "Allows you use rethinkDB functionality throughout Komada.",
+};
 exports.conf = config;
 exports.conf.requiredModules = ["rethinkdbdash"];
-
-exports.init = () => {
-  db = require("rethinkdbdash")(config.db);
-};
 ```
-
-You define a variable by `let db;`, and then, when Komada loads the piece, it'll run
-the function from `exports.init`, assigning the module (and the configuration if exists,
-or any function) to said variable. Then, we can work with it anywhere.
 
 The example above is the provider for [RethinkDB](https://www.rethinkdb.com),
 you can check the source [here](https://github.com/dirigeants/komada-pieces/blob/master/providers/rethinkdb.js).

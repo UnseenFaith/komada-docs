@@ -25,8 +25,6 @@ exports.run = (client, msg) => {
 > **NOTE**: `ignoreBots` and `ignoreSelf` properties were added on komada **0.18.8**.
 
 ## Configuration
-- **enabled**: Represents if the inhibitor should be enabled or disabled, it must be
-a boolean. Set to false to completely disable this monitor, it cannot be forcefully enabled.
+- **enabled**: Represents if the inhibitor should be enabled or disabled, it must be a boolean. Set to false to completely disable this monitor, it cannot be forcefully enabled.
 - **ignoreBots**: Set this to true if you want the monitor to ignore bots.
-- **ignoreSelf**: Set this to true if you want the monitor to ignore the client user
-(the bot account, yourself if it's a selfbot).
+- **ignoreSelf**: Set this to true if you want the monitor to ignore the client user (the bot account, yourself if it's a selfbot).
