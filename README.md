@@ -33,7 +33,7 @@ komada.start({
   clientID: "the-invite-app-id",
   prefix: "+",
   clientOptions: {
-    fetchAllMembers: true,
+    fetchAllMembers: false,
   },
 });
 ```

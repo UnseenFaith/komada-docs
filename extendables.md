@@ -1,6 +1,6 @@
-# Extendables
+# Extendables (added in 0.20.1)
 
-This feature has been implemented in Komada **0.20.0**, they are functions
+This feature has been implemented in Komada **0.20.1**, they are functions
 that extend current Discord.js classes by adding methods or properties.
 
 Extendables have the following syntax:

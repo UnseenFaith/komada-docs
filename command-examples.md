@@ -85,7 +85,4 @@ the guild can run this command.
 
 ## That's all!
 
-You can ask us questions by joining our [Discord channel](https://discord.gg/dgs8263).
-And you can also check out our [komada-pieces](https://github.com/dirigeants/komada-pieces)
-GitHub repo for command examples provided by devs who used [komada](https://github.com/dirigeants/komada)
-(we also accept PRs from external collaborators, just read the rules written in the readme.md).
+You can ask us questions by joining our [Discord channel](https://discord.gg/dgs8263). And you can also check out our [komada-pieces](https://github.com/dirigeants/komada-pieces) GitHub repo for command examples provided by devs who used [komada](https://github.com/dirigeants/komada) (we also accept PRs from external collaborators, just read the rules written in the readme.md).

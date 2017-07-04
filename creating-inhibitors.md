@@ -19,9 +19,8 @@ exports.conf = {
 exports.run = (client, msg, cmd) => {
   if(ok) {
     return false;
-  } else {
-    return "Reason for Rejection";
   }
+  return "Reason for Rejection";
 };
 ```
 

@@ -12,8 +12,7 @@ using this command, or copy over to your bot manually.
 - **Monitors**: Downloads a [monitor](monitors.md) from komada-pieces monitors.
 - **Inhibitors**: Downloads an [inhibitor](inhibitors.md) from komada-pieces inhibitors.
 - **Providers**: Downloads a [provider](providers.md) from komada-pieces providers.
-- **url**: Downloads a piece from an URL, as long as the URL gives raw text (such
-as hastebin).
+- **url**: Downloads a piece from an URL, as long as the URL gives raw text (such as hastebin).
 - **Finalizers**: Downloads a [finalizer](finalizers.md) from komada-pieces finalizers.
 - **Extendables**: Downloads a [extendable](extendables.md) from komada-pieces extendables.
 

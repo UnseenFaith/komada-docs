@@ -1,4 +1,4 @@
-# Finalizers
+# Finalizers (added in 0.20.0)
 
 This feature has been implemented in Komada **0.20.0**, they are functions run after
 successful commands, and this is the reason of why all commands **must** return an
@@ -17,8 +17,7 @@ exports.run = (client, msg, mes, start) => {
 - **client**: The client object.
 - **msg**: The message object.
 - **mes**: The value the command returns.
-- **start**: The time in which the command has been run, by `performance.now()`, ideal for
-benchmarking.
+- **start**: The time in which the command has been run, by `performance.now()`, ideal for benchmarking.
 
 ## Existing finalizers
 
