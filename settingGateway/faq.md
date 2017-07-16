@@ -40,7 +40,7 @@ I have created a key, now I want to edit it. For example, I dislike the built-in
 **Solution**:
 
 ```js
-client.settingGateway.update(msg.guild, "prefix", "k!");
+client.settingGateway.update(msg.guild, { prefix: "k!" });
 ```
 
 > Check the `update` method from [`settingGateway`](../settingGateway.md)
