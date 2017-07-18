@@ -13,4 +13,4 @@ The various pieces available are:
 - [Providers](providers.md): Providers give access to databases to other pieces. Providers are all built with the same methods and properties and should be interchangeable. 
 - [Event Handlers](event-handlers.md): Default handling for events. While Komada does not add any custom events, any normal discord.js event can be handled by simply creating a file.
 - [Finalizers](finalizers.md): Code that run on messages after a successful command. This feature has been implemented in **Komada v0.20.0**.
-- [Extendables](extendables.md): Code that acts passively, they're loaded before Discord.js classes are ever created. They add properties or methods to existing Discord.js methods.
+- [Extendables](extendables.md): Code that acts passively, they're loaded before Discord.js classes are ever created. They add properties or methods to existing Discord.js classes.
